@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		332FB9D922DD547300C6B269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FB9D822DD547300C6B269 /* AppDelegate.swift */; };
+		332FB9DB22DD547300C6B269 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FB9DA22DD547300C6B269 /* ViewController.swift */; };
+		332FB9DE22DD547300C6B269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 332FB9DC22DD547300C6B269 /* Main.storyboard */; };
+		332FB9E122DD547300C6B269 /* Strider.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 332FB9DF22DD547300C6B269 /* Strider.xcdatamodeld */; };
+		332FB9E322DD547400C6B269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 332FB9E222DD547400C6B269 /* Assets.xcassets */; };
+		332FB9E622DD547400C6B269 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 332FB9E422DD547400C6B269 /* LaunchScreen.storyboard */; };
+		332FB9F122DD547400C6B269 /* StriderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FB9F022DD547400C6B269 /* StriderTests.swift */; };
+		332FB9FC22DD547400C6B269 /* StriderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FB9FB22DD547400C6B269 /* StriderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		332FB9ED22DD547400C6B269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 332FB9CD22DD547300C6B269 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 332FB9D422DD547300C6B269;
+			remoteInfo = Strider;
+		};
+		332FB9F822DD547400C6B269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 332FB9CD22DD547300C6B269 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 332FB9D422DD547300C6B269;
+			remoteInfo = Strider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		332FB9D522DD547300C6B269 /* Strider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		332FB9D822DD547300C6B269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		332FB9DA22DD547300C6B269 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		332FB9DD22DD547300C6B269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		332FB9E022DD547300C6B269 /* Strider.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Strider.xcdatamodel; sourceTree = "<group>"; };
+		332FB9E222DD547400C6B269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		332FB9E522DD547400C6B269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		332FB9E722DD547400C6B269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		332FB9EC22DD547400C6B269 /* StriderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StriderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		332FB9F022DD547400C6B269 /* StriderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StriderTests.swift; sourceTree = "<group>"; };
+		332FB9F222DD547400C6B269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		332FB9F722DD547400C6B269 /* StriderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StriderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		332FB9FB22DD547400C6B269 /* StriderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StriderUITests.swift; sourceTree = "<group>"; };
+		332FB9FD22DD547400C6B269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		332FB9D222DD547300C6B269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332FB9E922DD547400C6B269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332FB9F422DD547400C6B269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		332FB9CC22DD547300C6B269 = {
+			isa = PBXGroup;
+			children = (
+				332FB9D722DD547300C6B269 /* Strider */,
+				332FB9EF22DD547400C6B269 /* StriderTests */,
+				332FB9FA22DD547400C6B269 /* StriderUITests */,
+				332FB9D622DD547300C6B269 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		332FB9D622DD547300C6B269 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				332FB9D522DD547300C6B269 /* Strider.app */,
+				332FB9EC22DD547400C6B269 /* StriderTests.xctest */,
+				332FB9F722DD547400C6B269 /* StriderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		332FB9D722DD547300C6B269 /* Strider */ = {
+			isa = PBXGroup;
+			children = (
+				332FB9D822DD547300C6B269 /* AppDelegate.swift */,
+				332FB9DA22DD547300C6B269 /* ViewController.swift */,
+				332FB9DC22DD547300C6B269 /* Main.storyboard */,
+				332FB9E222DD547400C6B269 /* Assets.xcassets */,
+				332FB9E422DD547400C6B269 /* LaunchScreen.storyboard */,
+				332FB9E722DD547400C6B269 /* Info.plist */,
+				332FB9DF22DD547300C6B269 /* Strider.xcdatamodeld */,
+			);
+			path = Strider;
+			sourceTree = "<group>";
+		};
+		332FB9EF22DD547400C6B269 /* StriderTests */ = {
+			isa = PBXGroup;
+			children = (
+				332FB9F022DD547400C6B269 /* StriderTests.swift */,
+				332FB9F222DD547400C6B269 /* Info.plist */,
+			);
+			path = StriderTests;
+			sourceTree = "<group>";
+		};
+		332FB9FA22DD547400C6B269 /* StriderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				332FB9FB22DD547400C6B269 /* StriderUITests.swift */,
+				332FB9FD22DD547400C6B269 /* Info.plist */,
+			);
+			path = StriderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		332FB9D422DD547300C6B269 /* Strider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 332FBA0022DD547400C6B269 /* Build configuration list for PBXNativeTarget "Strider" */;
+			buildPhases = (
+				332FB9D122DD547300C6B269 /* Sources */,
+				332FB9D222DD547300C6B269 /* Frameworks */,
+				332FB9D322DD547300C6B269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Strider;
+			productName = Strider;
+			productReference = 332FB9D522DD547300C6B269 /* Strider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		332FB9EB22DD547400C6B269 /* StriderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 332FBA0322DD547400C6B269 /* Build configuration list for PBXNativeTarget "StriderTests" */;
+			buildPhases = (
+				332FB9E822DD547400C6B269 /* Sources */,
+				332FB9E922DD547400C6B269 /* Frameworks */,
+				332FB9EA22DD547400C6B269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				332FB9EE22DD547400C6B269 /* PBXTargetDependency */,
+			);
+			name = StriderTests;
+			productName = StriderTests;
+			productReference = 332FB9EC22DD547400C6B269 /* StriderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		332FB9F622DD547400C6B269 /* StriderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 332FBA0622DD547400C6B269 /* Build configuration list for PBXNativeTarget "StriderUITests" */;
+			buildPhases = (
+				332FB9F322DD547400C6B269 /* Sources */,
+				332FB9F422DD547400C6B269 /* Frameworks */,
+				332FB9F522DD547400C6B269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				332FB9F922DD547400C6B269 /* PBXTargetDependency */,
+			);
+			name = StriderUITests;
+			productName = StriderUITests;
+			productReference = 332FB9F722DD547400C6B269 /* StriderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		332FB9CD22DD547300C6B269 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Nathan Hill";
+				TargetAttributes = {
+					332FB9D422DD547300C6B269 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					332FB9EB22DD547400C6B269 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 332FB9D422DD547300C6B269;
+					};
+					332FB9F622DD547400C6B269 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 332FB9D422DD547300C6B269;
+					};
+				};
+			};
+			buildConfigurationList = 332FB9D022DD547300C6B269 /* Build configuration list for PBXProject "Strider" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 332FB9CC22DD547300C6B269;
+			productRefGroup = 332FB9D622DD547300C6B269 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				332FB9D422DD547300C6B269 /* Strider */,
+				332FB9EB22DD547400C6B269 /* StriderTests */,
+				332FB9F622DD547400C6B269 /* StriderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		332FB9D322DD547300C6B269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				332FB9E622DD547400C6B269 /* LaunchScreen.storyboard in Resources */,
+				332FB9E322DD547400C6B269 /* Assets.xcassets in Resources */,
+				332FB9DE22DD547300C6B269 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332FB9EA22DD547400C6B269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332FB9F522DD547400C6B269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		332FB9D122DD547300C6B269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				332FB9DB22DD547300C6B269 /* ViewController.swift in Sources */,
+				332FB9E122DD547300C6B269 /* Strider.xcdatamodeld in Sources */,
+				332FB9D922DD547300C6B269 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332FB9E822DD547400C6B269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				332FB9F122DD547400C6B269 /* StriderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332FB9F322DD547400C6B269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				332FB9FC22DD547400C6B269 /* StriderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		332FB9EE22DD547400C6B269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 332FB9D422DD547300C6B269 /* Strider */;
+			targetProxy = 332FB9ED22DD547400C6B269 /* PBXContainerItemProxy */;
+		};
+		332FB9F922DD547400C6B269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 332FB9D422DD547300C6B269 /* Strider */;
+			targetProxy = 332FB9F822DD547400C6B269 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		332FB9DC22DD547300C6B269 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				332FB9DD22DD547300C6B269 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		332FB9E422DD547400C6B269 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				332FB9E522DD547400C6B269 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		332FB9FE22DD547400C6B269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		332FB9FF22DD547400C6B269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		332FBA0122DD547400C6B269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JYR878DQD;
+				INFOPLIST_FILE = Strider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NathanHill.Strider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		332FBA0222DD547400C6B269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JYR878DQD;
+				INFOPLIST_FILE = Strider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NathanHill.Strider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		332FBA0422DD547400C6B269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JYR878DQD;
+				INFOPLIST_FILE = StriderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NathanHill.StriderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Strider.app/Strider";
+			};
+			name = Debug;
+		};
+		332FBA0522DD547400C6B269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JYR878DQD;
+				INFOPLIST_FILE = StriderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NathanHill.StriderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Strider.app/Strider";
+			};
+			name = Release;
+		};
+		332FBA0722DD547400C6B269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JYR878DQD;
+				INFOPLIST_FILE = StriderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NathanHill.StriderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Strider;
+			};
+			name = Debug;
+		};
+		332FBA0822DD547400C6B269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JYR878DQD;
+				INFOPLIST_FILE = StriderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NathanHill.StriderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Strider;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		332FB9D022DD547300C6B269 /* Build configuration list for PBXProject "Strider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				332FB9FE22DD547400C6B269 /* Debug */,
+				332FB9FF22DD547400C6B269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		332FBA0022DD547400C6B269 /* Build configuration list for PBXNativeTarget "Strider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				332FBA0122DD547400C6B269 /* Debug */,
+				332FBA0222DD547400C6B269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		332FBA0322DD547400C6B269 /* Build configuration list for PBXNativeTarget "StriderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				332FBA0422DD547400C6B269 /* Debug */,
+				332FBA0522DD547400C6B269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		332FBA0622DD547400C6B269 /* Build configuration list for PBXNativeTarget "StriderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				332FBA0722DD547400C6B269 /* Debug */,
+				332FBA0822DD547400C6B269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		332FB9DF22DD547300C6B269 /* Strider.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				332FB9E022DD547300C6B269 /* Strider.xcdatamodel */,
+			);
+			currentVersion = 332FB9E022DD547300C6B269 /* Strider.xcdatamodel */;
+			path = Strider.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 332FB9CD22DD547300C6B269 /* Project object */;
+}
