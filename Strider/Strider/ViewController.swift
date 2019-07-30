@@ -43,26 +43,36 @@ class ViewController: UIViewController {
         soundStepper.minimumValue = 0
         soundStepper.maximumValue = 3
         
+        // if the user bool is true, then this is the first time opening the app
         if defaults.bool(forKey: "firstRun") {
             defaults.set(false, forKey: "firstRun")
+            systemSoundID = UInt32(soundArray[0])
+        } else{
+            // if the user bool is false, then the app has been opened more than once and userDefault data should be used in place of placeholder values
+            
+            //restores the saved sound of the user
+            let soundNum = defaults.double(forKey: "soundValue")
+            systemSoundID = UInt32(soundArray[Int(soundNum)])
+            
+            // restores the saved stride per minute value of the user
             stridesPerMinute = defaults.double(forKey: "strideValue")
+            
+            // restores the saved slider value of the user
             sliderValue = defaults.double(forKey: "sliderValue")
         }
-        
-        systemSoundID = UInt32(soundArray[0])
-        
     }
     
     
     @IBAction func sliderValueChanged(_ sender: UISlider) {
+        // update slider value and text
         sliderValue = Double(sender.value)
-        
         sliderLabel.text = "\(Int(sliderValue))"
         
+        // reset the timer with the new input received from slider
         stop()
-        
         start()
         
+        // update the userDefaults with the new slider value
         defaults.set(sliderValue, forKey: "sliderValue")
     }
     
@@ -78,32 +88,39 @@ class ViewController: UIViewController {
             
             //make the button into START image
             sender.setImage(UIImage(named: "btn_play"), for: .normal)
-
             status = true
         }
     }
     
     @IBAction func soundChanger(_ sender: UIStepper) {
-        
+        // update the current sound by stepping either up or down in the array
         systemSoundID = UInt32(soundArray[Int(sender.value)])
+        defaults.set(sender.value, forKey: "soundValue")
         
+        // if the timer isn't in use, play the sound so the user knows which sound is currently selected
         if status {
             playSound()
         }
     }
     
     func start(){
+        
+        // calculate and save the current user strides per minute
         stridesPerMinute = TimeInterval(60 / sliderValue)
         defaults.set(stridesPerMinute, forKey: "strideValue")
         
+        // initialize a timer using the strides per minute value and call the playSound function to create a metronome
         timer = Timer.scheduledTimer(timeInterval: TimeInterval(stridesPerMinute), target: self, selector: #selector(playSound), userInfo: nil, repeats: true)
     }
     
+    
     func stop(){
+        // stops the timer runtime and removes it from its run loop
         timer?.invalidate()
     }
     
     @objc func playSound() {
+        // plays the desired sound from system settings, set by the user using a stepper
         AudioServicesPlaySystemSound(systemSoundID)
     }
 }
