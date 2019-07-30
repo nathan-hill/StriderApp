@@ -35,6 +35,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var sliderLabel: UILabel!
     @IBOutlet weak var soundStepper: UIStepper!
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -60,6 +63,7 @@ class ViewController: UIViewController {
             // restores the saved slider value of the user
             sliderValue = defaults.double(forKey: "sliderValue")
         }
+        
     }
     
     
