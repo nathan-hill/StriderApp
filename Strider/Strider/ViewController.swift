@@ -11,6 +11,8 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
+    
+    
     // Array of sound values
     private var soundArray = [1057, 1113, 1127, 1261]
     
@@ -26,6 +28,9 @@ class ViewController: UIViewController {
     
     var systemSoundID: SystemSoundID = 1016
     
+    let defaults = UserDefaults.standard
+    
+    
     @IBOutlet weak var striderSlider: UISlider!
     @IBOutlet weak var sliderLabel: UILabel!
     @IBOutlet weak var soundStepper: UIStepper!
@@ -38,6 +43,11 @@ class ViewController: UIViewController {
         soundStepper.minimumValue = 0
         soundStepper.maximumValue = 3
         
+        if defaults.bool(forKey: "firstRun") {
+            defaults.set(false, forKey: "firstRun")
+            stridesPerMinute = defaults.double(forKey: "strideValue")
+            sliderValue = defaults.double(forKey: "sliderValue")
+        }
         
         systemSoundID = UInt32(soundArray[0])
         
@@ -52,17 +62,23 @@ class ViewController: UIViewController {
         stop()
         
         start()
+        
+        defaults.set(sliderValue, forKey: "sliderValue")
     }
     
     @IBAction func toggleStartStop(_ sender: UIButton) {
         //If the button status is true use stop functions, relabel button
-        if (status){
+        if status {
             start()
-            sender.setTitle("STOP", for: .normal)
+            // make the button into PAUSE image
+            sender.setImage(UIImage(named: "btn_pause"), for: .normal)
             status = false
         } else{
             stop()
-            sender.setTitle("START", for: .normal)
+            
+            //make the button into START image
+            sender.setImage(UIImage(named: "btn_play"), for: .normal)
+
             status = true
         }
     }
@@ -74,14 +90,13 @@ class ViewController: UIViewController {
         if status {
             playSound()
         }
-        
     }
     
     func start(){
         stridesPerMinute = TimeInterval(60 / sliderValue)
+        defaults.set(stridesPerMinute, forKey: "strideValue")
         
         timer = Timer.scheduledTimer(timeInterval: TimeInterval(stridesPerMinute), target: self, selector: #selector(playSound), userInfo: nil, repeats: true)
-
     }
     
     func stop(){
@@ -91,7 +106,5 @@ class ViewController: UIViewController {
     @objc func playSound() {
         AudioServicesPlaySystemSound(systemSoundID)
     }
-    
-    
 }
 
