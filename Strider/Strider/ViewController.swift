@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import AudioToolbox
 
 class ViewController: UIViewController {
     
@@ -46,6 +47,9 @@ class ViewController: UIViewController {
         soundStepper.minimumValue = 0
         soundStepper.maximumValue = 3
         
+        
+    
+        
         // if the user bool is true, then this is the first time opening the app
         if defaults.bool(forKey: "firstRun") {
             defaults.set(false, forKey: "firstRun")
@@ -62,6 +66,9 @@ class ViewController: UIViewController {
             
             // restores the saved slider value of the user
             sliderValue = defaults.double(forKey: "sliderValue")
+            sliderLabel.text = "\(Int(sliderValue))"
+            striderSlider.value = Float(sliderValue)
+            
         }
         
     }
@@ -74,7 +81,13 @@ class ViewController: UIViewController {
         
         // reset the timer with the new input received from slider
         stop()
-        start()
+        
+        // only restart the timer if the timer was already enabled,  this removes the chance for multiple timers to start if the user moves the slider
+        if !status {
+            start()
+        }
+        
+        
         
         // update the userDefaults with the new slider value
         defaults.set(sliderValue, forKey: "sliderValue")
@@ -84,6 +97,7 @@ class ViewController: UIViewController {
         //If the button status is true use stop functions, relabel button
         if status {
             start()
+            
             // make the button into PAUSE image
             sender.setImage(UIImage(named: "btn_pause"), for: .normal)
             status = false
@@ -108,12 +122,12 @@ class ViewController: UIViewController {
     }
     
     func start(){
-        
         // calculate and save the current user strides per minute
         stridesPerMinute = TimeInterval(60 / sliderValue)
         defaults.set(stridesPerMinute, forKey: "strideValue")
         
         // initialize a timer using the strides per minute value and call the playSound function to create a metronome
+        
         timer = Timer.scheduledTimer(timeInterval: TimeInterval(stridesPerMinute), target: self, selector: #selector(playSound), userInfo: nil, repeats: true)
     }
     
@@ -125,6 +139,7 @@ class ViewController: UIViewController {
     
     @objc func playSound() {
         // plays the desired sound from system settings, set by the user using a stepper
+        
         AudioServicesPlaySystemSound(systemSoundID)
     }
 }
