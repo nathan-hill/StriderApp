@@ -41,6 +41,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         // Do any additional setup after loading the view.
         soundStepper.wraps = true
         soundStepper.autorepeat = true
@@ -48,7 +50,7 @@ class ViewController: UIViewController {
         soundStepper.maximumValue = 3
         
         
-    
+        view.layer.contents = #imageLiteral(resourceName: "background").cgImage
         
         // if the user bool is true, then this is the first time opening the app
         if defaults.bool(forKey: "firstRun") {
