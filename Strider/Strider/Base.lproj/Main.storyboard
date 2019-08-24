@@ -55,9 +55,9 @@
                                     <action selector="soundChanger:" destination="BYZ-38-t0r" eventType="valueChanged" id="ta1-ey-j0w"/>
                                 </connections>
                             </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strider" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hC6-7M-1bA">
-                                <rect key="frame" x="20" y="20" width="374" height="107"/>
-                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="90"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stride Pacer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hC6-7M-1bA">
+                                <rect key="frame" x="20" y="20" width="374" height="96"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="80"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
